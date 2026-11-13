@@ -6,11 +6,11 @@ Welcome to the documentation library for **RouteApp** (`app.routeapp.org`), the 
 
 ## ⚡ Fast Jump Links: Common Everyday Tasks
 
-- [**⚡ "How Do I...?" Quick Reference Cheat Sheet**](docs/getting-started/05-how-do-i-cheat-sheet.md) — 1-2-3 step answers to checking in riders, navigating stops, texting parents, and doing vehicle inspections.
-- [**📱 Installing the App on Your Phone (iOS / Android)**](docs/getting-started/04-mobile-and-pwa-install.md) — Add RouteApp to your mobile home screen.
-- [**🚌 Sunday Morning Captain Playbook**](docs/manuals-and-playbooks/01-bus-captain-sunday-playbook.md) — Minute-by-minute Sunday morning routine.
-- [**🚗 Driver Safety & Pre-Trip Inspection Guide**](docs/manuals-and-playbooks/02-driver-safety-and-compliance-manual.md) — Daily walkaround checklist and emergency procedures.
-- [**🚪 Saturday Visitation Guide**](docs/manuals-and-playbooks/03-saturday-visitation-partner-guide.md) — Door knocking etiquette and Gospel presentation flow.
+- [**⚡ "How Do I...?" Quick Reference Cheat Sheet**](getting-started/05-how-do-i-cheat-sheet.md) — 1-2-3 step answers to checking in riders, navigating stops, texting parents, and doing vehicle inspections.
+- [**📱 Installing the App on Your Phone (iOS / Android)**](getting-started/04-mobile-and-pwa-install.md) — Add RouteApp to your mobile home screen.
+- [**🚌 Sunday Morning Captain Playbook**](manuals-and-playbooks/01-bus-captain-sunday-playbook.md) — Minute-by-minute Sunday morning routine.
+- [**🚗 Driver Safety & Pre-Trip Inspection Guide**](manuals-and-playbooks/02-driver-safety-and-compliance-manual.md) — Daily walkaround checklist and emergency procedures.
+- [**🚪 Saturday Visitation Guide**](manuals-and-playbooks/03-saturday-visitation-partner-guide.md) — Door knocking etiquette and Gospel presentation flow.
 
 ---
 

@@ -1,0 +1,23 @@
+{
+  "name": "docs.routeapp.org",
+  "version": "1.0.0",
+  "description": "RouteApp Dynamic Documentation Engine for GitHub Pages",
+  "scripts": {
+    "generate": "node generate-structure.js",
+    "build": "node generate-structure.js",
+    "dev": "npx -y serve . -p 8080",
+    "start": "npx -y serve . -p 8080"
+  },
+  "keywords": [
+    "routeapp",
+    "route",
+    "documentation",
+    "bus-ministry",
+    "soulwinning",
+    "spa",
+    "markdown",
+    "github-pages"
+  ],
+  "author": "Taligent Labs",
+  "license": "UNLICENSED"
+}

@@ -1,0 +1,578 @@
+[
+  {
+    "type": "file",
+    "name": "index.md",
+    "title": "RouteApp Official Documentation Portal",
+    "path": "index.md"
+  },
+  {
+    "type": "category",
+    "name": "getting-started",
+    "title": "Getting Started",
+    "path": "getting-started",
+    "children": [
+      {
+        "type": "file",
+        "name": "01-introduction.md",
+        "title": "Welcome to RouteApp: Simple Overview",
+        "path": "getting-started/01-introduction.md"
+      },
+      {
+        "type": "file",
+        "name": "02-workspace-and-login.md",
+        "title": "Workspace Access & Login",
+        "path": "getting-started/02-workspace-and-login.md"
+      },
+      {
+        "type": "file",
+        "name": "03-authentication-and-passkeys.md",
+        "title": "Authentication, 2FA & Passkeys (WebAuthn)",
+        "path": "getting-started/03-authentication-and-passkeys.md"
+      },
+      {
+        "type": "file",
+        "name": "04-mobile-and-pwa-install.md",
+        "title": "Mobile App Installation & Device Permissions",
+        "path": "getting-started/04-mobile-and-pwa-install.md"
+      },
+      {
+        "type": "file",
+        "name": "05-how-do-i-cheat-sheet.md",
+        "title": "⚡ \"How Do I...?\" Quick Reference Cheat Sheet",
+        "path": "getting-started/05-how-do-i-cheat-sheet.md"
+      }
+    ]
+  },
+  {
+    "type": "category",
+    "name": "roles-and-permissions",
+    "title": "Roles & Permissions",
+    "path": "roles-and-permissions",
+    "children": [
+      {
+        "type": "file",
+        "name": "01-roles-and-access-levels.md",
+        "title": "Roles & Access Levels",
+        "path": "roles-and-permissions/01-roles-and-access-levels.md"
+      },
+      {
+        "type": "file",
+        "name": "02-active-route-switcher.md",
+        "title": "Active Route Switcher",
+        "path": "roles-and-permissions/02-active-route-switcher.md"
+      }
+    ]
+  },
+  {
+    "type": "category",
+    "name": "bus-routes",
+    "title": "Bus Routes",
+    "path": "bus-routes",
+    "children": [
+      {
+        "type": "file",
+        "name": "01-my-route-dashboard.md",
+        "title": "My Route Dashboard (`/my-route`)",
+        "path": "bus-routes/01-my-route-dashboard.md"
+      },
+      {
+        "type": "file",
+        "name": "02-managing-stops-and-details.md",
+        "title": "Managing Bus Stops & Stop Details",
+        "path": "bus-routes/02-managing-stops-and-details.md"
+      },
+      {
+        "type": "file",
+        "name": "03-rider-and-prospect-management.md",
+        "title": "Rider & Prospect Management",
+        "path": "bus-routes/03-rider-and-prospect-management.md"
+      },
+      {
+        "type": "file",
+        "name": "04-route-ordering-and-optimization.md",
+        "title": "Route Ordering & Traveling Salesperson Optimization",
+        "path": "bus-routes/04-route-ordering-and-optimization.md"
+      },
+      {
+        "type": "file",
+        "name": "05-drivers-list-and-run-sheets.md",
+        "title": "Drivers List & Run Sheets (`/drivers-list`)",
+        "path": "bus-routes/05-drivers-list-and-run-sheets.md"
+      },
+      {
+        "type": "file",
+        "name": "06-districts-and-route-configuration.md",
+        "title": "Districts & Route Configuration",
+        "path": "bus-routes/06-districts-and-route-configuration.md"
+      },
+      {
+        "type": "file",
+        "name": "07-portable-route-packages.md",
+        "title": "Portable Route Packages (.route)",
+        "path": "bus-routes/07-portable-route-packages.md"
+      }
+    ]
+  },
+  {
+    "type": "category",
+    "name": "visitation",
+    "title": "Visitation",
+    "path": "visitation",
+    "children": [
+      {
+        "type": "file",
+        "name": "01-my-visits.md",
+        "title": "My Visits (Personal Visitation Log)",
+        "path": "visitation/01-my-visits.md"
+      },
+      {
+        "type": "file",
+        "name": "02-our-visits.md",
+        "title": "Our Visits (Team & Church-Wide Feed)",
+        "path": "visitation/02-our-visits.md"
+      },
+      {
+        "type": "file",
+        "name": "03-orphaned-visits.md",
+        "title": "Orphaned Visits",
+        "path": "visitation/03-orphaned-visits.md"
+      },
+      {
+        "type": "file",
+        "name": "04-visit-assignments-and-distribution.md",
+        "title": "Visit Assignments & Workload Distribution",
+        "path": "visitation/04-visit-assignments-and-distribution.md"
+      },
+      {
+        "type": "file",
+        "name": "05-address-lookup-tool.md",
+        "title": "Address Lookup & Route Finder",
+        "path": "visitation/05-address-lookup-tool.md"
+      }
+    ]
+  },
+  {
+    "type": "category",
+    "name": "attendance",
+    "title": "Attendance",
+    "path": "attendance",
+    "children": [
+      {
+        "type": "file",
+        "name": "01-live-sunday-attendance.md",
+        "title": "Live Sunday Attendance & Roll Call (`/attendance`)",
+        "path": "attendance/01-live-sunday-attendance.md"
+      },
+      {
+        "type": "file",
+        "name": "02-attendance-history-and-logs.md",
+        "title": "Attendance History, Logs & Analytics",
+        "path": "attendance/02-attendance-history-and-logs.md"
+      },
+      {
+        "type": "file",
+        "name": "03-pdf-manifest-generation.md",
+        "title": "PDF Manifest & Legal Bus Roster Generation",
+        "path": "attendance/03-pdf-manifest-generation.md"
+      }
+    ]
+  },
+  {
+    "type": "category",
+    "name": "public-registration",
+    "title": "Public Registration",
+    "path": "public-registration",
+    "children": [
+      {
+        "type": "file",
+        "name": "01-public-ride-registration.md",
+        "title": "Public Bus Ride Registration (`/ride`)",
+        "path": "public-registration/01-public-ride-registration.md"
+      },
+      {
+        "type": "file",
+        "name": "02-digital-permission-slips-and-esign.md",
+        "title": "Digital Permission Slips & E-Signatures",
+        "path": "public-registration/02-digital-permission-slips-and-esign.md"
+      },
+      {
+        "type": "file",
+        "name": "03-permission-slip-generator.md",
+        "title": "Standalone Permission Slip Generator & Document Vault",
+        "path": "public-registration/03-permission-slip-generator.md"
+      },
+      {
+        "type": "file",
+        "name": "04-pending-registrations-workflow.md",
+        "title": "Pending Registrations Approval Queue (`/pending-registrations`)",
+        "path": "public-registration/04-pending-registrations-workflow.md"
+      }
+    ]
+  },
+  {
+    "type": "category",
+    "name": "territory-soulwinning",
+    "title": "Territory Soulwinning",
+    "path": "territory-soulwinning",
+    "children": [
+      {
+        "type": "file",
+        "name": "01-active-territory-map.md",
+        "title": "Active Territory Map (`/maps` & `/soulwinning`)",
+        "path": "territory-soulwinning/01-active-territory-map.md"
+      },
+      {
+        "type": "file",
+        "name": "02-map-assignments-and-checkout.md",
+        "title": "Map Assignments & Territory Checkout",
+        "path": "territory-soulwinning/02-map-assignments-and-checkout.md"
+      },
+      {
+        "type": "file",
+        "name": "03-map-configuration-and-grids.md",
+        "title": "Map Configuration & Territory Grid Generation",
+        "path": "territory-soulwinning/03-map-configuration-and-grids.md"
+      },
+      {
+        "type": "file",
+        "name": "04-soulwinning-crm-and-canvassing.md",
+        "title": "Soulwinning CRM & Canvassing",
+        "path": "territory-soulwinning/04-soulwinning-crm-and-canvassing.md"
+      }
+    ]
+  },
+  {
+    "type": "category",
+    "name": "fleet-management",
+    "title": "Fleet Management",
+    "path": "fleet-management",
+    "children": [
+      {
+        "type": "file",
+        "name": "01-vehicles-and-fleet-registry.md",
+        "title": "Vehicles & Fleet Registry",
+        "path": "fleet-management/01-vehicles-and-fleet-registry.md"
+      },
+      {
+        "type": "file",
+        "name": "02-dvir-inspection-wizard.md",
+        "title": "Driver Vehicle Inspection Report (DVIR) Wizard (`/vehicles/dvir`)",
+        "path": "fleet-management/02-dvir-inspection-wizard.md"
+      },
+      {
+        "type": "file",
+        "name": "03-fleet-mechanics-and-work-orders.md",
+        "title": "Fleet Mechanics & Work Orders (`/vehicles/mechanics`)",
+        "path": "fleet-management/03-fleet-mechanics-and-work-orders.md"
+      },
+      {
+        "type": "file",
+        "name": "04-fleet-live-monitor-and-telemetry.md",
+        "title": "Fleet Live Monitor & Telemetry",
+        "path": "fleet-management/04-fleet-live-monitor-and-telemetry.md"
+      }
+    ]
+  },
+  {
+    "type": "category",
+    "name": "telephony-and-messaging",
+    "title": "Telephony & Messaging",
+    "path": "telephony-and-messaging",
+    "children": [
+      {
+        "type": "file",
+        "name": "01-route-phone-overview.md",
+        "title": "Route Phone Overview & Telephony Architecture",
+        "path": "telephony-and-messaging/01-route-phone-overview.md"
+      },
+      {
+        "type": "file",
+        "name": "02-chats-and-sms-room.md",
+        "title": "Chats & Two-Way SMS Messaging (`/chats`)",
+        "path": "telephony-and-messaging/02-chats-and-sms-room.md"
+      },
+      {
+        "type": "file",
+        "name": "03-in-app-voip-and-incoming-calls.md",
+        "title": "In-App VoIP & Incoming Call Handling",
+        "path": "telephony-and-messaging/03-in-app-voip-and-incoming-calls.md"
+      },
+      {
+        "type": "file",
+        "name": "04-telephony-system-settings.md",
+        "title": "Telephony System Settings & 10DLC Compliance",
+        "path": "telephony-and-messaging/04-telephony-system-settings.md"
+      }
+    ]
+  },
+  {
+    "type": "category",
+    "name": "workers-and-security",
+    "title": "Workers & Security",
+    "path": "workers-and-security",
+    "children": [
+      {
+        "type": "file",
+        "name": "01-workers-directory.md",
+        "title": "Workers Directory & Staff Management",
+        "path": "workers-and-security/01-workers-directory.md"
+      },
+      {
+        "type": "file",
+        "name": "02-audit-logs-and-compliance.md",
+        "title": "Audit Logs & Security Compliance",
+        "path": "workers-and-security/02-audit-logs-and-compliance.md"
+      }
+    ]
+  },
+  {
+    "type": "category",
+    "name": "data-management",
+    "title": "Data Management",
+    "path": "data-management",
+    "children": [
+      {
+        "type": "file",
+        "name": "01-bulk-data-import.md",
+        "title": "Bulk Data Import & Smart Field Mapping",
+        "path": "data-management/01-bulk-data-import.md"
+      },
+      {
+        "type": "file",
+        "name": "02-web-share-target-integration.md",
+        "title": "Web Share Target API & Map Sharing",
+        "path": "data-management/02-web-share-target-integration.md"
+      }
+    ]
+  },
+  {
+    "type": "category",
+    "name": "settings",
+    "title": "Settings",
+    "path": "settings",
+    "children": [
+      {
+        "type": "file",
+        "name": "01-profile-and-notifications.md",
+        "title": "Profile & Notification Settings",
+        "path": "settings/01-profile-and-notifications.md"
+      },
+      {
+        "type": "file",
+        "name": "02-security-2fa-and-passkeys.md",
+        "title": "Security Settings, 2FA & Passkey Management",
+        "path": "settings/02-security-2fa-and-passkeys.md"
+      },
+      {
+        "type": "file",
+        "name": "03-appearance-and-themes.md",
+        "title": "Appearance, Themes & Accessibility",
+        "path": "settings/03-appearance-and-themes.md"
+      },
+      {
+        "type": "file",
+        "name": "04-system-telephony-configuration.md",
+        "title": "System Telephony & Tenant Settings",
+        "path": "settings/04-system-telephony-configuration.md"
+      }
+    ]
+  },
+  {
+    "type": "category",
+    "name": "central-administration",
+    "title": "Central Administration",
+    "path": "central-administration",
+    "children": [
+      {
+        "type": "file",
+        "name": "01-central-admin-portal.md",
+        "title": "Central Administration Portal (/administration)",
+        "path": "central-administration/01-central-admin-portal.md"
+      },
+      {
+        "type": "file",
+        "name": "02-church-onboarding.md",
+        "title": "Church Onboarding & Workspace Provisioning (/new & /onboard)",
+        "path": "central-administration/02-church-onboarding.md"
+      },
+      {
+        "type": "file",
+        "name": "03-health-monitoring-and-metrics.md",
+        "title": "System Health & Prometheus Metrics Endpoints",
+        "path": "central-administration/03-health-monitoring-and-metrics.md"
+      }
+    ]
+  },
+  {
+    "type": "category",
+    "name": "developer-guide",
+    "title": "Developer Guide",
+    "path": "developer-guide",
+    "children": [
+      {
+        "type": "file",
+        "name": "01-architecture-and-stack.md",
+        "title": "Architecture & Technology Stack",
+        "path": "developer-guide/01-architecture-and-stack.md"
+      },
+      {
+        "type": "file",
+        "name": "02-local-development-setup.md",
+        "title": "Local Development Setup Guide",
+        "path": "developer-guide/02-local-development-setup.md"
+      },
+      {
+        "type": "file",
+        "name": "03-testing-and-pest-suite.md",
+        "title": "Testing Suite & Pest PHP Best Practices",
+        "path": "developer-guide/03-testing-and-pest-suite.md"
+      },
+      {
+        "type": "file",
+        "name": "04-database-schema-and-models.md",
+        "title": "Database Schema & Eloquent Models Reference",
+        "path": "developer-guide/04-database-schema-and-models.md"
+      }
+    ]
+  },
+  {
+    "type": "category",
+    "name": "manuals-and-playbooks",
+    "title": "Manuals & Playbooks",
+    "path": "manuals-and-playbooks",
+    "children": [
+      {
+        "type": "file",
+        "name": "01-bus-captain-sunday-playbook.md",
+        "title": "Bus Captain Sunday Morning Playbook",
+        "path": "manuals-and-playbooks/01-bus-captain-sunday-playbook.md"
+      },
+      {
+        "type": "file",
+        "name": "02-driver-safety-and-compliance-manual.md",
+        "title": "Driver Safety & DOT Compliance Manual",
+        "path": "manuals-and-playbooks/02-driver-safety-and-compliance-manual.md"
+      },
+      {
+        "type": "file",
+        "name": "03-saturday-visitation-partner-guide.md",
+        "title": "Saturday Visitation Partner Guide",
+        "path": "manuals-and-playbooks/03-saturday-visitation-partner-guide.md"
+      },
+      {
+        "type": "file",
+        "name": "04-pastor-and-director-handbook.md",
+        "title": "Pastor & Bus Director Handbook",
+        "path": "manuals-and-playbooks/04-pastor-and-director-handbook.md"
+      },
+      {
+        "type": "file",
+        "name": "05-parent-and-guardian-bus-faq.md",
+        "title": "Parent & Guardian Bus Ministry FAQ",
+        "path": "manuals-and-playbooks/05-parent-and-guardian-bus-faq.md"
+      },
+      {
+        "type": "file",
+        "name": "06-fleet-mechanic-sop.md",
+        "title": "Fleet Mechanic Standard Operating Procedure (SOP)",
+        "path": "manuals-and-playbooks/06-fleet-mechanic-sop.md"
+      }
+    ]
+  },
+  {
+    "type": "category",
+    "name": "troubleshooting-and-faq",
+    "title": "Troubleshooting & FAQ",
+    "path": "troubleshooting-and-faq",
+    "children": [
+      {
+        "type": "file",
+        "name": "01-common-issues-and-solutions.md",
+        "title": "Common Issues & Troubleshooting Solutions",
+        "path": "troubleshooting-and-faq/01-common-issues-and-solutions.md"
+      },
+      {
+        "type": "file",
+        "name": "02-hardware-and-device-setup.md",
+        "title": "Hardware & In-Vehicle Tablet Setup Guide",
+        "path": "troubleshooting-and-faq/02-hardware-and-device-setup.md"
+      },
+      {
+        "type": "file",
+        "name": "03-carrier-10dlc-troubleshooting.md",
+        "title": "Carrier 10DLC Registration & SMS Delivery Troubleshooting",
+        "path": "troubleshooting-and-faq/03-carrier-10dlc-troubleshooting.md"
+      },
+      {
+        "type": "file",
+        "name": "04-offline-data-sync-recovery.md",
+        "title": "Offline Data Caching & Cellular Sync Recovery",
+        "path": "troubleshooting-and-faq/04-offline-data-sync-recovery.md"
+      }
+    ]
+  },
+  {
+    "type": "category",
+    "name": "api-reference",
+    "title": "API Reference",
+    "path": "api-reference",
+    "children": [
+      {
+        "type": "file",
+        "name": "01-rest-and-tracking-apis.md",
+        "title": "REST, Tracking & Device Registration APIs",
+        "path": "api-reference/01-rest-and-tracking-apis.md"
+      },
+      {
+        "type": "file",
+        "name": "02-routing-and-geocoding-services.md",
+        "title": "Routing, Geocoding & Optimization APIs",
+        "path": "api-reference/02-routing-and-geocoding-services.md"
+      }
+    ]
+  },
+  {
+    "type": "category",
+    "name": "deep-dives-and-architecture",
+    "title": "Deep Dives & Architecture",
+    "path": "deep-dives-and-architecture",
+    "children": [
+      {
+        "type": "file",
+        "name": "01-boundary-resolver-and-geofencing.md",
+        "title": "Boundary Resolver & Geofencing Architecture",
+        "path": "deep-dives-and-architecture/01-boundary-resolver-and-geofencing.md"
+      },
+      {
+        "type": "file",
+        "name": "02-dynamic-chat-and-sms-routing.md",
+        "title": "Dynamic Chat Engine & SMS Bridging Architecture",
+        "path": "deep-dives-and-architecture/02-dynamic-chat-and-sms-routing.md"
+      },
+      {
+        "type": "file",
+        "name": "03-voip-and-webrtc-infrastructure.md",
+        "title": "VoIP & WebRTC Softphone Infrastructure",
+        "path": "deep-dives-and-architecture/03-voip-and-webrtc-infrastructure.md"
+      },
+      {
+        "type": "file",
+        "name": "04-documenso-and-esignature-pipeline.md",
+        "title": "Documenso & E-Signature Legal Pipeline",
+        "path": "deep-dives-and-architecture/04-documenso-and-esignature-pipeline.md"
+      },
+      {
+        "type": "file",
+        "name": "05-portable-route-package-format-spec.md",
+        "title": "Portable Route Package (.route) Specification",
+        "path": "deep-dives-and-architecture/05-portable-route-package-format-spec.md"
+      },
+      {
+        "type": "file",
+        "name": "06-cli-commands-and-cron-jobs.md",
+        "title": "CLI Commands, Cron Jobs & Background Tasks",
+        "path": "deep-dives-and-architecture/06-cli-commands-and-cron-jobs.md"
+      }
+    ]
+  }
+]

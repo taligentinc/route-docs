@@ -1,45 +1,192 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ROUTE Documentation Hub</title>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-  <meta name="description" content="Official ROUTE Documentation Hub - Bus routing, soulwinning CRM, telephony & fleet management platform.">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
-  <style>
-    :root {
-      --theme-color: #2563eb;
-    }
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    }
-    .app-name-link img {
-      max-height: 40px;
-    }
-  </style>
+  <meta name="description" content="Official ROUTE documentation for bus ministry operations, territory soulwinning, visitation tracking, fleet safety, and telephony communications.">
+  <link rel="icon" type="image/svg+xml" href="images/logo.svg">
+  <link rel="apple-touch-icon" href="images/icon.png">
+
+  <!-- Google Fonts: Inter & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Prism.js Syntax Highlighting Styles -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css">
+
+  <!-- ROUTE Docs Stylesheet -->
+  <link rel="stylesheet" href="css/docs.css">
 </head>
 <body>
-  <div id="app"></div>
+
+  <!-- Top Header Navigation -->
+  <header class="pk-header">
+    <div class="pk-header-left">
+      <button class="pk-mobile-toggle" id="mobileToggleBtn" aria-label="Toggle navigation menu">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+      </button>
+
+      <a href="#/index.md" class="pk-logo-link" style="display: flex; align-items: center; gap: 0.65rem; text-decoration: none;">
+        <img src="images/logo.svg" alt="RouteApp" class="pk-logo-img" style="height: 32px; width: 32px; object-fit: contain;">
+        <span style="font-weight: 900; font-size: 1.15rem; letter-spacing: -0.03em; color: var(--pk-text-primary); display: flex; align-items: center; gap: 0.3rem;">
+          ROUTE <span style="font-weight: 500; opacity: 0.85; font-size: 0.92rem; letter-spacing: normal;">App</span>
+        </span>
+        <span class="pk-badge-docs" style="background: rgba(56, 189, 248, 0.16); color: #38bdf8; border: 1px solid rgba(56, 189, 248, 0.35);">Docs</span>
+      </a>
+
+      <!-- Search Trigger Button in Header -->
+      <button class="pk-header-search-btn js-open-search" aria-label="Search documentation">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+        <span>Search docs...</span>
+        <kbd class="pk-kbd-shortcut">⌘K</kbd>
+      </button>
+    </div>
+
+    <div class="pk-header-right">
+      <a href="https://routeapp.org" target="_blank" rel="noopener" class="pk-header-link">
+        <span>Main Site</span>
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+      </a>
+
+      <a href="https://app.routeapp.org" target="_blank" rel="noopener" class="pk-header-link">
+        <span>App Portal</span>
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+      </a>
+
+      <a href="https://github.com/taligentinc/route-docs" target="_blank" rel="noopener" class="pk-header-link">
+        <span>GitHub</span>
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+      </a>
+
+      <button class="pk-theme-toggle" id="themeToggleBtn" aria-label="Toggle dark/light theme" title="Toggle theme">
+        <span id="themeIcon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+        </span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Sidebar Backdrop -->
+  <div class="pk-sidebar-backdrop" id="sidebarBackdrop"></div>
+
+  <!-- Main App Layout -->
+  <div class="pk-layout">
+
+    <!-- Left Sidebar: Folder Tree Navigation -->
+    <aside class="pk-sidebar-left" id="sidebarLeft">
+      <div class="pk-sidebar-filter">
+        <svg class="pk-sidebar-filter-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+        <input type="text" id="sidebarFilter" placeholder="Filter articles..." aria-label="Filter documentation tree">
+      </div>
+
+      <ul class="pk-nav-tree" id="navTree">
+        <!-- Dynamically rendered by app.js -->
+      </ul>
+    </aside>
+
+    <!-- Center Column: Main Content -->
+    <main class="pk-main-container" id="mainContent">
+      <div class="pk-content-wrapper">
+
+        <!-- Breadcrumbs -->
+        <nav class="pk-breadcrumbs" id="breadcrumbs" aria-label="Breadcrumbs">
+          <!-- Dynamically populated -->
+        </nav>
+
+        <!-- Article Header & Meta -->
+        <header class="pk-article-header" id="articleHeader">
+          <h1 class="pk-article-title" id="articleTitle">ROUTE Documentation Hub</h1>
+          <div class="pk-article-meta">
+            <div id="articleMeta" style="display: flex; gap: 1.25rem;"></div>
+            <a href="#" id="editGithubBtn" class="pk-edit-github" target="_blank" rel="noopener">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path></svg>
+              <span>Edit on GitHub</span>
+            </a>
+          </div>
+        </header>
+
+        <!-- Markdown Render Container -->
+        <article class="pk-markdown-body" id="markdownBody">
+          <div class="pk-loading-state">
+            <div class="pk-spinner"></div>
+            <span>Loading documentation...</span>
+          </div>
+        </article>
+
+        <!-- Prev / Next Article Pagination Cards -->
+        <nav class="pk-article-nav" id="articleNav" aria-label="Article navigation">
+          <!-- Dynamically populated -->
+        </nav>
+
+      </div>
+    </main>
+
+    <!-- Right Sidebar: On this page (TOC) -->
+    <aside class="pk-sidebar-right" id="sidebarRight">
+      <div class="pk-toc-title">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="8" y1="6" x2="21" y2="6"></line><line x1="8" y1="12" x2="21" y2="12"></line><line x1="8" y1="18" x2="21" y2="18"></line><line x1="3" y1="6" x2="3.01" y2="6"></line><line x1="3" y1="12" x2="3.01" y2="12"></line><line x1="3" y1="18" x2="3.01" y2="18"></line></svg>
+        <span>On this page</span>
+      </div>
+      <ul class="pk-toc-list" id="tocList">
+        <!-- Dynamically populated -->
+      </ul>
+    </aside>
+
+  </div>
+
+  <!-- Search Modal Dialog Overlay -->
+  <div class="pk-search-modal-backdrop" id="searchBackdrop" role="dialog" aria-modal="true" aria-label="Search documentation">
+    <div class="pk-search-modal">
+      <div class="pk-search-input-wrapper">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#9ca3af" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+        <input type="text" id="searchInput" placeholder="Search documentation, guides, and workflows..." autocomplete="off" spellcheck="false">
+        <button class="pk-search-clear-btn" id="searchClearBtn" aria-label="Clear search">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+      </div>
+
+      <div class="pk-search-results" id="searchResults">
+        <div class="pk-search-empty">
+          <p>Type keywords to search documentation...</p>
+        </div>
+      </div>
+
+      <div class="pk-search-footer">
+        <div class="pk-search-footer-shortcuts">
+          <span><kbd class="pk-kbd-shortcut">↑</kbd> <kbd class="pk-kbd-shortcut">↓</kbd> Navigate</span>
+          <span><kbd class="pk-kbd-shortcut">↵</kbd> Select</span>
+          <span><kbd class="pk-kbd-shortcut">esc</kbd> Close</span>
+        </div>
+        <span>ROUTE Documentation</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- CDN Libraries: Marked (Markdown Parser), Prism (Syntax Highlighter), Mermaid (Diagrams) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/9.1.6/marked.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/autoloader/prism-autoloader.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.0/mermaid.min.js"></script>
   <script>
-    window.$docsify = {
-      name: 'ROUTE Documentation',
-      repo: 'taligentinc/route-docs',
-      auto2top: true,
-      homepage: 'docs/index.md',
-      search: {
-        maxAge: 86400000,
-        paths: 'auto',
-        placeholder: 'Search documentation...',
-        noData: 'No results found',
-        depth: 3
-      }
+    if (window.mermaid) {
+      mermaid.initialize({
+        startOnLoad: false,
+        theme: 'dark',
+        themeVariables: {
+          darkMode: true,
+          background: '#0b0f19',
+          primaryColor: '#13294b',
+          primaryTextColor: '#f8fafc',
+          primaryBorderColor: '#38bdf8',
+          lineColor: '#7bafd4',
+        }
+      });
     }
   </script>
-  <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
-  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-bash.min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-php.min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-json.min.js"></script>
+
+  <!-- Main Engine Script -->
+  <script src="js/app.js"></script>
 </body>
 </html>
