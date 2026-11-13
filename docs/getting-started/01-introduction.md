@@ -42,4 +42,4 @@ You don't need to search through an app store:
 ---
 
 ## ❓ Need Help Fast?
-Check out our [**⚡ "How Do I...?" Cheat Sheet**](file:///Users/dspillman/Library/CloudStorage/GoogleDrive-dspillman@lbseagles.org/Shared%20drives/Audio%20Visual/Infrastructure/DevOps/ROUTE/app.routeapp.org/docs/getting-started/05-how-do-i-cheat-sheet.md) for quick 3-step answers to all common questions!
+Check out our [**⚡ "How Do I...?" Cheat Sheet**](docs/getting-started/05-how-do-i-cheat-sheet.md) for quick 3-step answers to all common questions!
